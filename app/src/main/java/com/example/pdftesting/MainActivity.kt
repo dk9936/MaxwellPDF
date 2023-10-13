@@ -35,9 +35,11 @@ class MainActivity : AppCompatActivity(), PDFHandlerCallback {
 
         bGeneratePDF.setOnClickListener {
             try {
+                // write these lines in actvity
                 val folder = "ConsumerDetailsPdf"
                 val fileName = "demo.pdf"
                 path = getExternalFilesDir(folder).toString() + "/" + fileName
+                ///
 
                 val pdfHelper = PDFHelper()
 

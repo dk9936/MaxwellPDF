@@ -361,7 +361,7 @@ class PdfViewerActivity : AppCompatActivity(), PDFViewerCallback {
                         request.setDescription("Downloading $fileName")
                         request.setVisibleInDownloadsUi(true)
                         request.setDestinationInExternalPublicDir(
-                            Environment.DIRECTORY_DOWNLOADS,
+                            FileUtils.getAppPath(directoryName!!),
                             filePath
                         )
                         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)

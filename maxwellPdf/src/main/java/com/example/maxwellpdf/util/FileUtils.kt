@@ -79,7 +79,7 @@ object FileUtils {
     }
 
     // It provides a path of InternalStorage/Document/AppName/file.pdf
-    private fun getAppPath(directoryName: String): String {
+    fun getAppPath(directoryName: String): String {
 
         val documentsDirectory = File(
             Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS),
